@@ -6,10 +6,10 @@
 #' @author Jason Bragg (jasongbragg@gmail.com)
 #' @export
 
-project_SFS_from_genotypes <- function(gt_SNP, m, n_min=1) {
+project_SFS_from_genotypes <- function(gt_SNP, m) {
 
-   sfs_stack <- get_SFS_stack(gt_SNP,n_min)
-   proj_sfs  <- project_SFS_stack(sfs_stack,m)
+   sfs_stack <- get_SFS_stack(gt_SNP)
+   proj_sfs  <- project_SFS_stack_mc(sfs_stack,m)
    return(proj_sfs)
 
 }

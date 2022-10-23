@@ -6,7 +6,7 @@
 #' @author Jason Bragg (jasongbragg@gmail.com)
 #' @export
 
-   get_JSFS_stack  <- function(gt_SNP_1, gt_SNP_2, n_min=1) {
+   get_JSFS_stack  <- function(gt_SNP_1, gt_SNP_2) {
 
       mv1 <- colSums(is.na(gt_SNP_1))
       mv2 <- colSums(is.na(gt_SNP_2))

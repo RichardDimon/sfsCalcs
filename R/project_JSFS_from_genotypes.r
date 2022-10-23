@@ -7,10 +7,10 @@
 #' @author Jason Bragg (jasongbragg@gmail.com)
 #' @export
 
-project_JSFS_from_genotypes <- function(gt_SNP_1, gt_SNP_2, m, n_min=1) {
+project_JSFS_from_genotypes <- function(gt_SNP_1, gt_SNP_2, m) {
 
-   jsfs_stack <- get_JSFS_stack(gt_SNP_1, gt_SNP_2, n_min)
-   proj_jsfs  <- project_JSFS_stack(jsfs_stack,m)
+   jsfs_stack <- get_JSFS_stack(gt_SNP_1, gt_SNP_2)
+   proj_jsfs  <- project_JSFS_stack_mc(jsfs_stack,m)
    return(proj_jsfs)
 
 }

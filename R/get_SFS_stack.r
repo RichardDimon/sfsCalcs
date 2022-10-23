@@ -4,7 +4,7 @@
 #' @return a joint site frequency spectrum 
 #' @author Jason Bragg (jasongbragg@gmail.com)
 #' @export
-   get_SFS_stack  <- function(gt_SNP, n_min=1) {
+   get_SFS_stack  <- function(gt_SNP) {
       n_loci    <- ncol(gt_SNP) 
       n_calls   <- colSums(!is.na(gt_SNP))
       tab_calls <- names(table(n_calls))

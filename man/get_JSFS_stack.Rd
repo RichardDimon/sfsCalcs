@@ -4,7 +4,7 @@
 \alias{get_JSFS_stack}
 \title{Calculate joint site frequency spectrum from two gentoype matrices, assuming loci in same order. Data can be missing. Generates a stack of spectra for sites with equal missingness profiles.}
 \usage{
-get_JSFS_stack(gt_SNP_1, gt_SNP_2, n_min = 1)
+get_JSFS_stack(gt_SNP_1, gt_SNP_2)
 }
 \arguments{
 \item{gt_SNP_1}{\itemize{

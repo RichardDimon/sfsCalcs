@@ -4,7 +4,7 @@
 \alias{project_JSFS_from_genotypes}
 \title{Calculate and down project a joint site frequency spectrum from two gentoype matrices, assuming loci in same order. Data can be missing.}
 \usage{
-project_JSFS_from_genotypes(gt_SNP_1, gt_SNP_2, m, n_min = 1)
+project_JSFS_from_genotypes(gt_SNP_1, gt_SNP_2, m)
 }
 \arguments{
 \item{gt_SNP_1}{\itemize{

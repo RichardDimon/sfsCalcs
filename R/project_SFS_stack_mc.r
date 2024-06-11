@@ -27,7 +27,7 @@ project_SFS_stack_mc <- function(SFS_stack,m, ncpu = NULL) {
       return(i_proj_sfs)
    }
 
-   results <- mclapply(sfs_mat_list, call_projection, m=20, mc.cores=ncpu)
+   results <- mclapply(sfs_mat_list, call_projection, m=m, mc.cores=ncpu)
 
    for (i in 1:n_stack) {
       i_proj_sfs <- results[[ i ]]

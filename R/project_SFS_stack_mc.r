@@ -2,11 +2,12 @@
 #'
 #' @param SFS_stack - a stack of site frequecy spectra in list format [Required]
 #' @param m - value for down-projection [Required]
+#' @param ncpu - value for number of cores to use [Required]
 #' @return a joint site frequency spectrum 
 #' @author Jason Bragg (jasongbragg@gmail.com)
 #' @export
 
-project_SFS_stack_mc <- function(SFS_stack,m, ncpu = NULL) {
+project_SFS_stack_mc <- function(SFS_stack,m, ncpu) {
 
    require(parallel)
 

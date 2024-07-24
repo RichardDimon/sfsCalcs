@@ -15,7 +15,7 @@ project_SFS <- function (sfs, m) {
    if (nrow(sfs) < m) {
     
     #C_m[, 1][1:nrow(sfs)] <- sfs
-    cat("length of sfs (",nrow(sfs),") is smaller than m (",m,"). not including in stack")
+    cat("length of sfs (",nrow(sfs),") is smaller than m (",m,"). not including in stack \n")
     C_m <- 0
     
   } else{

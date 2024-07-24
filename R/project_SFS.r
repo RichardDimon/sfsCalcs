@@ -12,9 +12,11 @@ project_SFS <- function (sfs, m) {
   C_m <- matrix(rep(0, m + 1), nrow = (m + 1))
   rownames(C_m) <- as.character(0:(length(C_m) - 1))
 
-  
-  if (nrow(sfs)<m){
-    C_m[,1][1:nrow(sfs)] <- sfs
+   if (nrow(sfs) < m) {
+    
+    #C_m[, 1][1:nrow(sfs)] <- sfs
+    cat("length of sfs (",nrow(sfs),") is smaller than m (",m,"). not including in stack")
+    C_m <- 0
     
   } else{
     

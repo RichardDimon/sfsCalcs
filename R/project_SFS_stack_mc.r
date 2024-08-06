@@ -7,7 +7,7 @@
 #' @author Jason Bragg (jasongbragg@gmail.com)
 #' @export
 
-project_SFS_stack_mc <- function(SFS_stack,m, ncpu) {
+project_SFS_stack_mc <- function(SFS_stack,m, ncpu, unlim_m) {
 
    require(parallel)
 
@@ -24,7 +24,7 @@ project_SFS_stack_mc <- function(SFS_stack,m, ncpu) {
    }
 
    call_projection <- function(sfss, m) {
-      i_proj_sfs <- project_SFS(sfss, m)
+      i_proj_sfs <- project_SFS(sfss, m, unlim_m)
       return(i_proj_sfs)
    }
 

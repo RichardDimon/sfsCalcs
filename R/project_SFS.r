@@ -12,17 +12,9 @@ project_SFS <- function (sfs, m, unlim_m) {
   C_m <- matrix(rep(0, m + 1), nrow = (m + 1))
   rownames(C_m) <- as.character(0:(length(C_m) - 1))
 
-if (unlim_m==TRUE) {
+if (unlim_m == TRUE) {
   cat("unlimited m ")
-  for (i in 0:(m)) {
-    C_m_i <- 0
-    for (j in i:(n - m + i)) {
-      pm <- (choose(m, i) * choose((n - m), (j - i)))/choose(n, j)
-      pm_Cn <- pm * C_n[j + 1, 1]
-      C_m_i = C_m_i + pm_Cn
-    }
-    C_m[i + 1, 1] <- C_m_i
-  }
+  C_m <- sfs
 } else{
   
    if (nrow(sfs) < m) {

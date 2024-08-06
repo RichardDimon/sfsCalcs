@@ -14,11 +14,9 @@ project_SFS <- function (sfs, m, unlim_m) {
 
 if (unlim_m == TRUE) {
   cat("unlimited m ")
-  
-C_m[1:nrow(sfs)] <- sfs
+  C_m[1:nrow(sfs)] <- sfs
  
-  
-} else{
+} else if (unlim_m == FALSE) {
   
    if (nrow(sfs) < m) {
     cat("length of sfs (",nrow(sfs),") is smaller than m (",m,"). not including in stack \n")

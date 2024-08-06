@@ -14,17 +14,8 @@ project_SFS <- function (sfs, m, unlim_m) {
 
 if (unlim_m == TRUE) {
   cat("unlimited m ")
-
-  for (i in 0:(m)) {
-         # initialize counts for m
-         C_m_i <- 0
-         for (j in i:(n-m+i)) {
-            pm    <- ( choose(m,i) * choose( (n-m), (j-i) ) ) / choose(n,j)  
-            pm_Cn <- pm * C_n[j+1,1]
-            C_m_i = C_m_i + pm_Cn
-        }
-        C_m[i+1,1] <- C_m_i
-      }
+  
+C_m[1:nrow(sfs)] <- sfs
  
   
 } else{

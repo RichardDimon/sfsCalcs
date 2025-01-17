@@ -13,7 +13,7 @@ project_SFS <- function (sfs, m, unlim_m) {
   rownames(C_m) <- as.character(0:(length(C_m) - 1))
 
 if (unlim_m == TRUE) {
-  cat("unlimited m ")
+  #cat("unlimited m ")
   C_m[1:nrow(sfs)] <- sfs
  
 } else if (unlim_m == FALSE) {

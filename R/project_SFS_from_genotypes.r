@@ -10,7 +10,7 @@ project_SFS_from_genotypes <- function(gt_SNP, m, ncpu, unlim_m=FALSE) {
 
    sfs_stack <- get_SFS_stack(gt_SNP)
   proj_sfs <- project_SFS_stack_mc(SFS_stack=sfs_stack, m=m, ncpu=ncpu, unlim_m=unlim_m)
-  cat("m", length(proj_sfs), "")
+  cat("sfs", length(proj_sfs), "")
   return(proj_sfs)
 }
 

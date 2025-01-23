@@ -19,7 +19,7 @@ if (unlim_m == TRUE) {
 } else if (unlim_m == FALSE) {
   
    if (nrow(sfs) < m | nrow(sfs) == m) {
-    #cat("length of sfs (",nrow(sfs),") is smaller than m (",m,"). \n")
+    #cat("length of sfs (",nrow(sfs),") is smaller than or eual to m (",m,"). not down-projecting \n")
     #C_m[, 1][1:nrow(sfs)] <- sfs
     C_m <- 0 + sfs
      

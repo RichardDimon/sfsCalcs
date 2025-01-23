@@ -21,7 +21,7 @@ if (unlim_m == TRUE) {
    if (nrow(sfs) < m) {
     cat("length of sfs (",nrow(sfs),") is smaller than m (",m,"). not including in stack \n")
     #C_m[, 1][1:nrow(sfs)] <- sfs
-    C_m <- 0
+    C_m <- 0 + sfs
   } else{
     
   for (i in 0:(m)) {

@@ -22,7 +22,8 @@ if (unlim_m == TRUE) {
     #cat("length of sfs (",nrow(sfs),") is smaller than m (",m,"). \n")
     #C_m[, 1][1:nrow(sfs)] <- sfs
     C_m <- 0 + sfs
-  } else{
+     
+  } else {
     
   for (i in 0:(m)) {
     C_m_i <- 0
